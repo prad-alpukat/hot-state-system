@@ -9,6 +9,9 @@ on:
     branches: [main, master]
   workflow_dispatch:  # Manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   build-windows:
     runs-on: windows-latest
